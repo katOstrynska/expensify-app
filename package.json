@@ -6,7 +6,6 @@
   "author": "<k.ostrynska@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -22,12 +21,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^2.1.1",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.1",
-    "enzyme-to-json": "^3.3.5",
     "express": "^4.17.0",
-    "jest": "^24.8.0",
-    "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.6.0",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
@@ -40,17 +34,21 @@
     "react-modal": "^3.8.1",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
-    "react-test-renderer": "^16.8.6",
     "redux": "^4.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
     "validator": "8.0.0",
     "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-cli": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.4.4"
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6",
+    "webpack-dev-server": "^3.3.1"
   }
 }
