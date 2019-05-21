@@ -29,16 +29,24 @@ module.exports = (env) => {
                 test: /\.s?css$/,
                 use: [{
                     loader: MiniCssExtractPlugin.loader
-                  },
-                    "css-loader",
-                    "sass-loader"
+                  }, {
+                      loader: "css-loader",
+                      options: {
+                          sourceMap: true
+                      }
+                  } , {
+                    loader: "sass-loader",
+                    options: {
+                        sourceMap: true
+                    }
+                  }
                 ]
             }]
         },
         plugins: [
             CSSExtract
         ],
-        devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+        devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
             port: 8080,
